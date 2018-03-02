@@ -1,15 +1,14 @@
 package dev;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-        
-        System.out.println( "Hello World 2!" );
-    }
+import com.github.lalyos.jfiglet.*;
+
+public class App {
+	public static void main(String[] args) {
+		
+		System.out.println("Hello World!");
+
+		String ascciiArt = FigletFont.convertOneLine("HELLO WORLD");
+
+		System.out.println(ascciiArt);
+	}
 }
